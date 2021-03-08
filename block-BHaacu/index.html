@@ -14,8 +14,8 @@
 	<body>
 		<header class="header">
 			<section class="top-bar">
-				<div class="container flex">
-					<div>
+				<div class="container flex top-content">
+					<div class="flex-48 info">
 						<span>
 							<i class="fa fa-phone" aria-hidden="true"></i
 							>+1-1245-6778-980
@@ -25,7 +25,7 @@
 							>info@yourdomain.com
 						</span>
 					</div>
-					<div class="social-icons">
+					<div class="social-icons flex flex-48">
 						<a href="home"
 							><i class="fa fa-facebook-official" aria-hidden="true"></i
 						></a>
@@ -45,8 +45,13 @@
 			<section class="menu">
 				<div class="container menu-bar flex">
 					<div class="logo flex-20"><span>Uni</span> <span>tech</span></div>
+
 					<nav class="nav">
-						<ul class="flex flex-70">
+						<label for="toggle"
+							><i class="fa fa-bars fa-2x" aria-hidden="true"></i
+						></label>
+						<input id="toggle" type="checkbox" />
+						<ul class="flex nav-links flex-70">
 							<li><a href="home">home</a></li>
 							<li><a href="home">about us</a></li>
 							<li><a href="home">services</a></li>
@@ -196,7 +201,7 @@
 
 		<footer class="footer">
 			<section class="footer-links container flex">
-				<ul class="col flex-23">
+				<ul class="col footer-reach flex-23">
 					<li>Reach Us</li>
 					<li>
 						<i class="fa fa-location-arrow" aria-hidden="true"></i>#123,
@@ -208,7 +213,7 @@
 						>info@yourdomain.com
 					</li>
 				</ul>
-				<ul class="col flex-23">
+				<ul class="col footer-nav flex-23">
 					<li>Site Links</li>
 					<li><a href="">Home</a></li>
 					<li><a href="">About Us</a></li>
@@ -216,26 +221,30 @@
 					<li><a href="">Portfolio</a></li>
 					<li><a href="">Pricing</a></li>
 				</ul>
-				<ul class="col flex-23">
+				<ul class="col footer-quick-links flex-23">
 					<li>Quick Links</li>
-					<li><a href="">Home</a></li>
-					<li><a href="">About Us</a></li>
-					<li><a href="">Services</a></li>
-					<li><a href="">Portfolio</a></li>
-					<li><a href="">Pricing</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Contact Us</a></li>
+					<li><a href="">Privacy Policy</a></li>
+					<li><a href="">Terms and Conditions</a></li>
 				</ul>
-				<ul class="col flex-23">
+				<ul class="col footer-social flex-23">
 					<li>Follow Us</li>
 					<li class="social">
-					<a href="">	<i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="">	<i class="fa fa-twitter" aria-hidden="true"></i></a>
-					<a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-					<a href="">	<i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="">
+							<i class="fa fa-facebook" aria-hidden="true"></i
+						></a>
+						<a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+						<a href="">
+							<i class="fa fa-instagram" aria-hidden="true"></i
+						></a>
 					</li>
 				</ul>
 			</section>
 			<section class="footer-text">
-				<span>Bootstrap</span>Theme by WebThemez. <br> &copy; All Rights Reserved.
+				<span>Bootstrap</span>Theme by WebThemez. <br />
+				&copy; All Rights Reserved.
 			</section>
 		</footer>
 	</body>
