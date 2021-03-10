@@ -1,0 +1,100 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	line-height: 1.5;
+	font-family: "Archivo", sans-serif;
+}
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 0.8rem;
+	text-transform: capitalize;
+}
+.container {
+	max-width: 75%;
+	margin: 0 auto;
+}
+.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex-c {
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.flex-20 {
+	flex: 0 1 20%;
+}
+.flex-23 {
+	flex: 0 1 23%;
+}
+.flex-30 {
+	flex: 0 1 30%;
+}
+.flex-32 {
+	flex: 0 1 32%;
+}
+.flex-40 {
+	flex: 0 1 40%;
+}
+.flex-48 {
+	flex: 0 1 48%;
+}
+.flex-50 {
+	flex: 0 1 50%;
+}
+.flex-55 {
+	flex: 0 1 55%;
+}
+.flex-65 {
+	flex: 0 1 65%;
+}
+.flex-70 {
+	flex: 0 1 80%;
+}
+.wrap {
+	flex-wrap: wrap;
+}
+
+// placeholders
+
+%trans-text {
+	text-transform: capitalize;
+	font-weight: 900;
+}
+%padding {
+	padding: 2rem 0;
+}
+
+%button {
+	border: none;
+	cursor: pointer;
+	border-radius: 1rem;
+	padding: 0.5rem 1rem;
+	color: white;
+	background-color: $primary-dark;
+}
+%dropdown {
+	position: absolute;
+	top: 100%;
+	left: 0%;
+	background-color: $text-light;
+	display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+	@extend %trans-text;
+}

@@ -1,0 +1,76 @@
+//styling services section
+
+.our-services {
+	@extend .top-consulting;
+	text-align: left;
+	.col-1 {
+		h2 {
+			text-transform: none;
+		}
+		p {
+			margin: 0;
+		}
+		span {
+			color: red;
+		}
+	}
+}
+
+//styling our prodicts section
+
+.our-products {
+	@extend .solutions;
+
+	p {
+		margin: 1rem auto;
+	}
+	hr {
+		border: none;
+		border-top: 1px solid $text-dark;
+	}
+	.card-container {
+		padding: 2rem 0;
+		.card {
+			text-align: left;
+			img {
+				width: 30%;
+				display: block;
+				margin: 1rem 0;
+			}
+			span,
+			p {
+				font-size: 1rem;
+				text-transform: capitalize;
+				margin: 0.5rem 0;
+			}
+			p {
+				font-size: 0.8rem;
+				color: $text-dark;
+			}
+		}
+	}
+}
+
+//styling best deals section
+
+.best-deals {
+	@extend .best;
+
+	.col-1-1 {
+		h5 {
+			display: inline-block;
+		}
+		p {
+			display: inline-block;
+			font-size: 0.9rem;
+			color: $text-dark;
+		}
+	}
+}
+
+//styling
+.awarded {
+	@extend .top-consulting;
+	@extend .solutions;
+	background-color: $white;
+}
