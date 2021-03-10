@@ -1,0 +1,84 @@
+//styling introduction section
+
+.introduction {
+	background-color: $primary-dark;
+	padding: 3rem 0;
+	text-align: center;
+	span,
+	p {
+		font-weight: 900;
+		font-size: 3rem;
+		margin: 1rem 0;
+		color: $white;
+	}
+	p {
+		font-weight: normal;
+		color: $text-dark;
+		font-size: 1rem;
+	}
+}
+
+// styling solutions section
+
+.solutions.about {
+	background-color: $white;
+}
+
+// styling mission section
+
+.mission {
+	padding: 4rem 0;
+	text-align: center;
+
+	.col-1 img {
+		width: 80%;
+	}
+	.col-2 {
+		h4 {
+			text-align: left;
+			font-size: 1.2rem;
+		}
+		p {
+			text-align: left;
+			font-size: 0.8rem;
+			color: $text-dark;
+			margin-bottom: 1.5rem;
+		}
+	}
+}
+
+//styling out-teamm section
+
+.our-team {
+	@extend .solutions;
+	background-color: $text-light;
+	text-align: center;
+	padding: 4rem 0;
+	h2 {
+		margin-bottom: 0;
+	}
+	p {
+		margin: 3rem auto;
+		margin-top: 0;
+	}
+	.card-container {
+		.card {
+			background-color: $white;
+			box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.068);
+			img {
+				width: 100%;
+				margin-bottom: 1rem;
+			}
+			span {
+				font-size: 1rem;
+				font-weight: normal;
+				text-transform: capitalize;
+			}
+			small {
+				color: red;
+				text-transform: uppercase;
+				margin: 1rem 0;
+			}
+		}
+	}
+}

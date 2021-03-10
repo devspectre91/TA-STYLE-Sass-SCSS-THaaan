@@ -1,0 +1,146 @@
+//buttons------------------
+.btn-primary,
+.btn-secondary {
+	@extend %button;
+}
+.btn-secondary {
+	background-color: rgba(255, 255, 255, 0.137);
+	color: $primary-dark;
+	border: 1px solid $primary-dark;
+	text-transform: capitalize;
+}
+
+// styling top bar--------------------------------
+
+.top-bar {
+	background-color: $primary-dark;
+	padding: 0.5rem 0;
+
+	span {
+		color: $white;
+		font-size: 0.8rem;
+		font-weight: lighter;
+	}
+	.social-icons {
+		justify-content: flex-end;
+	}
+	.fa {
+		color: white;
+		margin-right: 0.3rem;
+		margin-left: 0.5rem;
+	}
+}
+
+// styling menu bar--------------------------------
+
+.menu {
+	background-color: $text-light;
+
+	.fa-bars {
+		display: none;
+	}
+}
+#toggle {
+	display: none;
+
+	&:checked ~ .nav-links {
+		display: inline-block;
+	}
+}
+
+.logo {
+	span:last-child {
+		font-weight: 900;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+	}
+	span:first-child {
+		color: $primary-dark;
+		font-size: 1.5rem;
+		font-weight: 900;
+	}
+}
+
+.nav ul li {
+	padding: 0.8rem 1rem;
+
+	& a {
+		font-weight: 600;
+	}
+	&:hover {
+		background-color: $primary-light;
+	}
+}
+.pages-link {
+	position: relative;
+	&:hover > ul {
+		display: inline-block;
+	}
+	.fa {
+		margin-left: 0.3rem;
+	}
+}
+.blog-link {
+	position: relative;
+	&:hover > ul {
+		display: inline-block;
+	}
+	.fa {
+		margin-left: 0.3rem;
+	}
+}
+
+.pages-dropdown {
+	@extend %dropdown;
+
+	& li a {
+		display: inline-block;
+		width: 10rem;
+	}
+}
+
+.blog-dropdown {
+	@extend %dropdown;
+	& li a {
+		display: inline-block;
+		width: 10rem;
+	}
+}
+
+// styling footer--------------------------------
+.footer {
+	padding: 3rem 0;
+	background-color: $dark-grey;
+	.footer-links {
+		align-items: flex-start;
+		a {
+			color: $text-light;
+		}
+		.fa {
+			color: $text-light;
+			margin-right: 1rem;
+		}
+		.col li:first-child {
+			color: $text-light;
+			font-size: 1rem;
+			font-weight: bold;
+			margin-bottom: 1rem;
+		}
+		li {
+			color: $text-light;
+			font-size: 0.8rem;
+			margin-bottom: 0.5rem;
+		}
+	}
+}
+
+.footer-text {
+	margin-top: 3rem;
+	text-align: center;
+	font-size: 0.7rem;
+	color: $text-light;
+	span {
+		font-weight: bold;
+		color: seashell;
+	}
+}
