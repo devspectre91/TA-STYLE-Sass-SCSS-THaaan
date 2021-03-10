@@ -1,0 +1,22 @@
+// styling error section
+
+.error {
+	@extend .our-products;
+	background-color: $white;
+
+	.card-container {
+		align-items: flex-start;
+		.card {
+			text-align: center;
+			.fa {
+				line-height: 3.5rem;
+				border-radius: 50%;
+				width: 3.5rem;
+				height: 3.5rem;
+				text-align: center;
+				color: red;
+				background-color: $text-light;
+			}
+		}
+	}
+}

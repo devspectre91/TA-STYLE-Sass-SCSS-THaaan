@@ -1,0 +1,168 @@
+// styling hero section--------------------
+.hero {
+	padding-top: 1rem;
+
+	padding-bottom: 11rem;
+
+	background: url("../assets/media/banner-1.jpg");
+
+	background-position-y: -4rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	h1 {
+		font-size: 3rem;
+		margin: 1rem 0;
+	}
+	span {
+		font-size: 1rem;
+		margin-bottom: 1rem;
+	}
+	.hero-content {
+		justify-content: center;
+		align-items: flex-start;
+		margin-top: 7rem;
+	}
+}
+
+//styling services section
+
+.services {
+	padding-bottom: 6rem;
+	text-align: center;
+
+	h3 {
+		font-size: 2rem;
+		font-weight: 900;
+		margin-top: 3rem;
+	}
+	p {
+		font-size: 1rem;
+		color: $text-dark;
+		margin-top: 0.5rem;
+		margin-bottom: 5rem;
+	}
+	.card-container {
+		.card {
+			border: 1px solid $text-dark;
+			padding: 1rem;
+			border-radius: 2%;
+			img {
+				width: 20%;
+			}
+			p {
+				margin-bottom: 1rem;
+				color: $text-dark;
+			}
+			.btn-secondary {
+				margin: 2rem 0;
+			}
+			span {
+				font-size: 1.2rem;
+				text-transform: capitalize;
+				margin-top: 1rem;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+//styling solutions section
+
+.solutions {
+	background-color: $text-light;
+	text-align: center;
+	padding: 3rem 0;
+	h2 {
+		font-size: 2.4rem;
+		margin: 1rem 0;
+		font-weight: 900;
+	}
+	p {
+		color: $text-dark;
+		width: 60%;
+		margin: 2rem auto;
+	}
+}
+
+//styling top-consulting section
+
+.top-consulting {
+	padding: 4rem 0;
+	text-align: center;
+
+	img {
+		width: 100%;
+	}
+	.col-1 {
+		h2 {
+			font-size: 2.1rem;
+			margin: 1rem 0;
+			font-weight: 900;
+			text-transform: capitalize;
+		}
+		p {
+			color: $text-dark;
+			width: 90%;
+			margin: 2rem auto;
+		}
+	}
+}
+//styling best section
+
+.best {
+	background-color: $primary-dark;
+	padding: 2rem 0;
+	text-align: left;
+
+	.col-1-1 {
+		h5 {
+			font-size: 1.2rem;
+			color: white;
+			font-weight: bold;
+			text-transform: capitalize;
+		}
+		p {
+			font-size: 0.8rem;
+			color: white;
+		}
+	}
+
+	.col-2-2 {
+		text-align: right;
+		.btn-secondary {
+			color: white;
+			border: 1px solid white;
+		}
+	}
+}
+
+//styling leader section
+.leader {
+	@extend .top-consulting;
+	.col-1 {
+		p {
+			text-align: justify;
+		}
+	}
+}
+
+//styling clients section
+
+.clients {
+	background-color: $text-light;
+	padding: 3rem 0;
+	text-align: center;
+	h2 {
+		text-align: center;
+		font-size: 2.1rem;
+		margin: 1rem 0;
+	}
+	img {
+		width: 7rem;
+		margin: 0 1.5rem;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+}
